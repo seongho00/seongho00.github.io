@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8"/>
     <title>Seongho의 포트폴리오</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="javascript.js"></script>
+
 
     <!-- 폰트(선택) -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Raleway:500,700&display=swap"
@@ -14,10 +13,17 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- Font Awesome 6 Free -->
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            rel="stylesheet"
+    />
+
     <!-- jQuery (최신 안정 버전) -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
 </head>
 <body>
 <header class="fixed top-0 left-0 right-0 z-50 bg-[#273c75] text-white p-5 shadow-md ">
@@ -93,8 +99,6 @@
 </section>
 
 
-
-
 <!-- 프로젝트 섹션 -->
 <section id="projects">
     <div class="title flex items-center justify-center my-8">
@@ -106,28 +110,46 @@
 
 </section>
 
-<div class="flex flex-col items-center gap-5">
-    <div class="blog-card !w-[2000px] max-w-[600px]">
+<div class="flex flex-col items-center gap-8 mt-16">
+    <div class="blog-card w-[1000px] h-[300px]">
         <div class="meta">
-            <div class="photo" style="background-image: url('./assets/img/jpa-logo.png');"></div>
+            <div class="photo absolute inset-0 overflow-hidden">
+                <img src="./assets/tripTaleImg/메인 페이지.png"
+                     class="slide absolute inset-0 w-full h-full object-cover" />
+                <img src="./assets/tripTaleImg/로그인 페이지.png"
+                     class="slide absolute inset-0 w-full h-full object-cover hidden" />
+                <img src="./assets/tripTaleImg/여행 디테일 화면.png"
+                     class="slide absolute inset-0 w-full h-full object-cover hidden" />
+            </div>
+
+
             <ul class="details">
-                <li class="author"><a href="#">Author Name</a></li>
-                <li class="date">Date Here</li>
-                <li class="tags">
+                <li class="author"><a href="#">TripTale Project</a></li>
+                <li class="date flex items-center gap-2"><i class="fa-solid fa-calendar-days"></i>2025/05/24 ~
+                    2025/07.02
+                </li>
+                <li class="tags flex items-center gap-2">
+                    <i class="fa-solid fa-tag"></i>
                     <ul>
-                        <li><a href="#">Tag1</a></li>
-                        <li><a href="#">Tag2</a></li>
-                        <li><a href="#">Tag3</a></li>
+                        <li><a href="#">Java</a></li>
+                        <li><a href="#">Spring Boot</a></li>
+                        <li><a href="#">MySQL</a></li>
                     </ul>
                 </li>
             </ul>
         </div>
         <div class="description">
-            <h1>Title Here</h1>
-            <h2>Subtitle or tagline</h2>
-            <p>Short description text. Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+            <h1>TripTale Project</h1>
+            <h2>여행 장소 추천 및 동선& 일정 추천 페이지</h2>
+            <h3>- 목표 : 사용자가 편하게 여행 계획을 세우고, 여행 이후에 느꼈던 감정에 대한 글 작성을 간략화시키는 것을 목표로 합니다. </h3>
+            <p>- 여행 장소 API를 통해 지역에 따른 여행지를 추천해줍니다. </p>
+            <p>- 추천에 없는 여행지는 검색을 통해 실시간으로 크롤링하여 정보를 나타냅니다. </p>
+            <p>- 장소를 선택하여 계획을 생성할 때 AI API를 사용하여 단거리 순으로 여행지 순서를 추천해줍니다.</p>
+            <p>- 사진과 기분 키워드 입력을 통해 AI API를 활용하여 자동으로 글을 생성합니다.</p>
+            <p>- 생성된 글은 게시글을 통해 다른 사용자들과 소통할 수 있습니다.</p>
             <p class="read-more">
-                <a href="#">Read More</a>
+                <a href="https://velog.io/@seongho00/series/%EC%B2%AB-%EB%B2%88%EC%A7%B8-%EA%B0%9C%EC%9D%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8">Go
+                    Velog<i class="fa-solid fa-right-to-bracket"></i></a>
             </p>
         </div>
 
@@ -151,7 +173,7 @@
             </ul>
         </div>
         <div class="description">
-            <h1>Title Here</h1>
+            <h1>TMR Team Project</h1>
             <h2>Subtitle or tagline</h2>
             <p>Short description text. Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
             <p class="read-more">
