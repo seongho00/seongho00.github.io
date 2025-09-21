@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Raleway:500,700&display=swap"
           rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- jQuery (최신 안정 버전) -->
@@ -21,16 +23,16 @@
 <header class="fixed top-0 left-0 right-0 z-50 bg-[#273c75] text-white p-5 shadow-md ">
     <div class="mx-auto max-w-7xl px-6 flex items-center justify-between ">
         <!-- 로고 -->
-        <h1 class="logo-text text-orange-400 text-4xl font-bold ">
+        <h1 class="logo-text text-black text-4xl font-bold ">
             Seongho00 - portfolio
         </h1>
 
         <!-- 네비게이션 -->
-        <nav class="flex space-x-8 text-lg font-semibold">
-            <a href="#home" class="hover:text-orange-300 text-2xl transition">Home</a>
-            <a href="#about" class="hover:text-orange-300 text-2xl transition">Profile</a>
-            <a href="#projects" class="hover:text-orange-300 text-2xl transition">Projects</a>
-            <a href="#skills" class="hover:text-orange-300 text-2xl transition">Skills</a>
+        <nav class="flex space-x-8 text-lg font-semibold gap-3">
+            <a href="#home" class="nav-link hover:text-orange-300 text-2xl transition">Home</a>
+            <a href="#profile" class="nav-link hover:text-orange-300 text-2xl transition">Profile</a>
+            <a href="#projects" class="nav-link hover:text-orange-300 text-2xl transition">Projects</a>
+            <a href="#skills" class="nav-link hover:text-orange-300 text-2xl transition">Skills</a>
         </nav>
     </div>
 </header>
@@ -38,10 +40,132 @@
 <!-- 헤더 높이만큼 빈 div (본문이 가려지지 않도록) -->
 <div class="h-28"></div>
 
+
+<!-- 소개 섹션 -->
+<section id="profile">
+    <div class="title flex items-center justify-center my-8">
+        <div class="flex-1 border-t border-gray-300"></div>
+        <h2 class="px-4 text-5xl font-bold text-black">Profile</h2>
+        <div class="flex-1 border-t border-gray-300"></div>
+    </div>
+
+    <!-- Education -->
+    <div>
+        <h3 class="text-2xl font-bold mb-4 border-b pb-2">Education</h3>
+        <ul class="list-disc list-inside space-y-2">
+            <li>순천대학교 (2025-02 졸업)</li>
+            <li class="ml-5 text-gray-600"> - 성적: 4.07 / 4.5</li>
+        </ul>
+    </div>
+
+
+    <!-- Socials -->
+    <section id="socials" class="max-w-md mx-auto py-8">
+        <h3 class="text-2xl font-bold mb-4 border-b pb-2">Socials</h3>
+        <ul class="space-y-3">
+            <li>
+                📧 <b>Email</b><br>
+                tjdwns000927@gamil.com
+            </li>
+            <li>
+                🐱 <b>Github</b><br>
+                <a href="https://github.com/seongho00" target="_blank" class="text-blue-400 hover:underline">https://github.com/seongho00</a>
+            </li>
+            <li>
+                📚 <b>Velog</b><br>
+                <a href="https://velog.io/@seongho00/posts" target="_blank" class="text-blue-400 hover:underline">https://velog.io/@seongho00/posts</a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Professional Training -->
+    <div>
+        <h3 class="text-xl font-bold mb-2">Professional Training</h3>
+        <ul class="list-disc list-inside space-y-1">
+            <li>코리아IT아카데미
+                <ul class="ml-5 text-gray-600">
+                    <li>우수 수료 (2024-09-26 ~ 2024-12-24)</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+</section>
+
+
+
+
+<!-- 프로젝트 섹션 -->
+<section id="projects">
+    <div class="title flex items-center justify-center my-8">
+        <div class="flex-1 border-t border-gray-300"></div>
+        <h2 class="px-4 text-5xl font-bold text-black">My Projects</h2>
+        <div class="flex-1 border-t border-gray-300"></div>
+    </div>
+
+
+</section>
+
+<div class="flex flex-col items-center gap-5">
+    <div class="blog-card !w-[2000px] max-w-[600px]">
+        <div class="meta">
+            <div class="photo" style="background-image: url('./assets/img/jpa-logo.png');"></div>
+            <ul class="details">
+                <li class="author"><a href="#">Author Name</a></li>
+                <li class="date">Date Here</li>
+                <li class="tags">
+                    <ul>
+                        <li><a href="#">Tag1</a></li>
+                        <li><a href="#">Tag2</a></li>
+                        <li><a href="#">Tag3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="description">
+            <h1>Title Here</h1>
+            <h2>Subtitle or tagline</h2>
+            <p>Short description text. Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+            <p class="read-more">
+                <a href="#">Read More</a>
+            </p>
+        </div>
+
+    </div>
+
+    <!-- 반복 시 .blog-card.alt 사용해서 레이아웃 반전 가능 -->
+    <div class="blog-card alt">
+
+        <div class="meta">
+            <div class="photo" style="background-image: url('./assets/img/jpa-logo.png');"></div>
+            <ul class="details">
+                <li class="author"><a href="#">Author Name</a></li>
+                <li class="date">Date Here</li>
+                <li class="tags">
+                    <ul>
+                        <li><a href="#">Tag1</a></li>
+                        <li><a href="#">Tag2</a></li>
+                        <li><a href="#">Tag3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="description">
+            <h1>Title Here</h1>
+            <h2>Subtitle or tagline</h2>
+            <p>Short description text. Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+            <p class="read-more">
+                <a href="#">Read More</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+
 <section id="skills">
     <div class="title flex items-center justify-center my-8">
         <div class="flex-1 border-t border-gray-300"></div>
-        <h2 class="px-4 text-2xl font-bold text-gray-800">Skills</h2>
+        <h2 class="px-4 text-5xl font-bold text-black">Skills</h2>
         <div class="flex-1 border-t border-gray-300"></div>
     </div>
 
@@ -95,47 +219,6 @@
         </card>
     </div>
 </section>
-
-<!-- 소개 섹션 -->
-<section id="about">
-    <h2>소개</h2>
-    <p>
-        백엔드(Spring Boot)와 프론트엔드(React) 모두 경험이 있으며,
-        데이터 분석과 시각화 프로젝트에도 관심이 많습니다.
-        문제 해결과 사용자 경험 향상에 집중합니다.
-    </p>
-</section>
-
-<!-- 프로젝트 섹션 -->
-<section id="projects">
-    <h2>프로젝트</h2>
-    <div class="project-card">
-        <h3>🏠 상권 분석 시뮬레이터</h3>
-        <p>Spring Boot + React 기반의 창업 상권 분석 및 시뮬레이션 서비스.</p>
-        <a href="https://github.com/seongho00/TMRTeamProject" target="_blank">깃허브 보기</a>
-    </div>
-    <div class="project-card">
-        <h3>🤖 챗봇 시스템</h3>
-        <p>Flask + BERT를 활용한 한국어 의도 분류 & NER 챗봇 구축.</p>
-    </div>
-    <div class="project-card">
-        <h3>📊 데이터 시각화 대시보드</h3>
-        <p>Python, Chart.js를 활용한 실시간 상권 데이터 시각화.</p>
-    </div>
-</section>
-
-<!-- 연락처 섹션 -->
-<section id="contact">
-    <h2>연락처</h2>
-    <p>📧 이메일: <a href="mailto:your_email@example.com">your_email@example.com</a></p>
-    <p>💼 GitHub: <a href="https://github.com/seongho00" target="_blank">github.com/seongho00</a></p>
-    <p>🔗 블로그: <a href="#">추가 가능</a></p>
-</section>
-
-<!-- 푸터 -->
-<footer>
-    <p>© 2025 Seongho. All rights reserved.</p>
-</footer>
 
 <!-- ====== 스크립트 (Vue 2 → 컴포넌트) ====== -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.7.16/vue.min.js"></script>
