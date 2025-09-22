@@ -26,7 +26,7 @@
     <script src="javascript.js"></script>
 </head>
 <body>
-<header class="fixed top-0 left-0 right-0 z-50 bg-[#273c75] text-white p-5 shadow-md ">
+<header class="fixed top-0 left-0 right-0 z-50 bg-[#273c75] text-white p-5 shadow-md !h-20">
     <div class="mx-auto max-w-7xl px-6 flex items-center justify-between ">
         <!-- 로고 -->
         <h1 class="logo-text text-black text-4xl font-bold ">
@@ -44,11 +44,38 @@
 </header>
 
 <!-- 헤더 높이만큼 빈 div (본문이 가려지지 않도록) -->
-<div class="h-28"></div>
+<div class="h-32"></div>
+
+
+<!-- 홈 섹션 -->
+<section id="home" class="scroll-mt-32">
+    <div class="flex w-[1200px] mx-auto justify-between ">
+        <div>
+            <div class="w-full ">
+                <span class="title text-5xl font-bold leading-relaxed">빠른 적응을 통해 디테일을 중시하는 <br/>개발자 임성호입니다.</span>
+            </div>
+            <div class="flex flex-col justify-between items-between body text-xl ml-6 mt-3 p-5 pr-32 h-[300px]">
+                <span class="pb-3">
+                    - 어떤 문제든 <span class="font-bold">포기하지 않고</span> 끈기 있게 파고 들어 최선의 해결책을 찾아내는 성격을 가지고 있습니다.
+                </span>
+                <span class="pb-3">
+                    - 구현해본 서비스를 직접 이용해보며 <span class="font-bold">개선점</span>을 찾고 완벽을 추구하는 성격을 통해 더욱 프로젝트의 완성도를 높일 수 있습니다.
+                </span>
+                <span class="pb-3">
+                    - <span class="font-bold">높은 이해력과 빠른 적응력</span>을 통해 새로운 기술을 적용하여 실무에 지장이 없는 개발자가 되겠습니다.
+                </span>
+
+            </div>
+        </div>
+        <img src="./assets/img/testImg.jpg" alt="" class="w-[400px] h-[500px] object-cover rounded-xl">
+    </div>
+</section>
+
+<div class="h-[100px]"></div>
 
 
 <!-- 소개 섹션 -->
-<section id="profile">
+<section id="profile" class="scroll-mt-24">
     <div class="title flex items-center justify-center my-8">
         <div class="flex-1 border-t border-gray-300"></div>
         <h2 class="px-4 text-5xl font-bold text-black">Profile</h2>
@@ -56,57 +83,61 @@
     </div>
 
     <!-- Education -->
-    <div>
-        <h3 class="text-2xl font-bold mb-4 border-b pb-2">Education</h3>
-        <ul class="list-disc list-inside space-y-2">
-            <li>순천대학교 (2025-02 졸업)</li>
-            <li class="ml-5 text-gray-600"> - 성적: 4.07 / 4.5</li>
-        </ul>
-    </div>
+    <div class="flex">
+
+        <!-- Socials -->
+        <section id="Education" class="max-w-md mx-auto">
+            <h3 class="text-2xl font-bold mb-4 border-b pb-2">Education</h3>
+            <ul class="space-y-3">
+                <li><span class="text-lg font-bold">순천대학교</span> 화학교육과 (2025-02 졸업)</li>
+                <li class="ml-5 text-gray-600"> - 성적: 3.82 / 4.5</li>
+            </ul>
+        </section>
+
+        <!-- Socials -->
+        <section id="Professional" class="max-w-md mx-auto">
+            <h3 class="text-2xl font-bold mb-4 border-b pb-2">Professional Training</h3>
+            <ul class="space-y-3">
+                <li>
+                    <span class="text-lg font-bold">코리아IT아카데미</span> (2025.02 - 2025.10)
+                </li>
+                <li>[산대특] 프롬프트AI & Open API & 공공데이터를 활용한 웹앱개발자 양성과정</li>
+            </ul>
+        </section>
 
 
-    <!-- Socials -->
-    <section id="socials" class="max-w-md mx-auto py-8">
-        <h3 class="text-2xl font-bold mb-4 border-b pb-2">Socials</h3>
-        <ul class="space-y-3">
-            <li>
-                📧 <b>Email</b><br>
-                tjdwns000927@gamil.com
-            </li>
-            <li>
-                🐱 <b>Github</b><br>
-                <a href="https://github.com/seongho00" target="_blank" class="text-blue-400 hover:underline">https://github.com/seongho00</a>
-            </li>
-            <li>
-                📚 <b>Velog</b><br>
-                <a href="https://velog.io/@seongho00/posts" target="_blank" class="text-blue-400 hover:underline">https://velog.io/@seongho00/posts</a>
-            </li>
-        </ul>
-    </section>
+        <!-- Socials -->
+        <section id="socials" class="max-w-md mx-auto">
+            <h3 class="text-2xl font-bold mb-4 border-b pb-2">Socials</h3>
+            <ul class="space-y-3">
+                <li>
+                    📧 <b>Email</b><br>
+                    tjdwns000927@gamil.com
+                </li>
+                <li>
+                    🐱 <b>Github</b><br>
+                    <a href="https://github.com/seongho00" target="_blank" class="text-blue-400 hover:underline">https://github.com/seongho00</a>
+                </li>
+                <li>
+                    📚 <b>Velog</b><br>
+                    <a href="https://velog.io/@seongho00/posts" target="_blank" class="text-blue-400 hover:underline">https://velog.io/@seongho00/posts</a>
+                </li>
+            </ul>
+        </section>
 
-    <!-- Professional Training -->
-    <div>
-        <h3 class="text-xl font-bold mb-2">Professional Training</h3>
-        <ul class="list-disc list-inside space-y-1">
-            <li>코리아IT아카데미
-                <ul class="ml-5 text-gray-600">
-                    <li>우수 수료 (2024-09-26 ~ 2024-12-24)</li>
-                </ul>
-            </li>
-        </ul>
+
     </div>
 
 </section>
 
 
 <!-- 프로젝트 섹션 -->
-<section id="projects">
+<section id="projects" class="scroll-mt-24">
     <div class="title flex items-center justify-center my-8">
         <div class="flex-1 border-t border-gray-300"></div>
         <h2 class="px-4 text-5xl font-bold text-black">My Projects</h2>
         <div class="flex-1 border-t border-gray-300"></div>
     </div>
-
 
 </section>
 
@@ -143,7 +174,7 @@
             </ul>
         </div>
         <div class="description">
-            <h1>TripTale Project</h1>
+            <h1 class="font-bold">TripTale Project</h1>
             <h2>여행 장소 추천 및 동선& 일정 추천 페이지</h2>
             <h3>- 목표 : 사용자가 편하게 여행 계획을 세우고, 여행 이후에 느꼈던 감정에 대한 글 작성을 간략화시키는 것을 목표로 합니다. </h3>
             <p>- 여행 장소 API를 통해 지역에 따른 여행지를 추천해줍니다. </p>
@@ -152,7 +183,8 @@
             <p>- 사진과 기분 키워드 입력을 통해 AI API를 활용하여 자동으로 글을 생성합니다.</p>
             <p>- 생성된 글은 게시글을 통해 다른 사용자들과 소통할 수 있습니다.</p>
             <p class="read-more">
-                <a href="https://velog.io/@seongho00/series/%EC%B2%AB-%EB%B2%88%EC%A7%B8-%EA%B0%9C%EC%9D%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8">Read More<i class="fa-solid fa-right-to-bracket"></i></a>
+                <a href="https://velog.io/@seongho00/series/%EC%B2%AB-%EB%B2%88%EC%A7%B8-%EA%B0%9C%EC%9D%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8">Read
+                    More<i class="fa-solid fa-right-to-bracket"></i></a>
             </p>
         </div>
 
@@ -192,26 +224,27 @@
             </ul>
         </div>
         <div class="description">
-            <h1>TMR Team Project</h1>
-            <h2>여행 장소 추천 및 동선& 일정 추천 페이지</h2>
-            <h3>- 목표 : 사용자가 편하게 여행 계획을 세우고, 여행 이후에 느꼈던 감정에 대한 글 작성을 간략화시키는 것을 목표로 합니다. </h3>
-            <p>- 여행 장소 API를 통해 지역에 따른 여행지를 추천해줍니다. </p>
-            <p>- 추천에 없는 여행지는 검색을 통해 실시간으로 크롤링하여 정보를 나타냅니다. </p>
-            <p>- 장소를 선택하여 계획을 생성할 때 AI API를 사용하여 단거리 순으로 여행지 순서를 추천해줍니다.</p>
-            <p>- 사진과 기분 키워드 입력을 통해 AI API를 활용하여 자동으로 글을 생성합니다.</p>
-            <p>- 생성된 글은 게시글을 통해 다른 사용자들과 소통할 수 있습니다.</p>
+            <h1 class="font-bold">TMR Team Project</h1>
+            <h2> 상권 분석 & 챗봇 서비스 & 부동산 사기 위험도 분석</h2>
+            <h3>- 목표 : 상권 위험도와 등기부등본 위험도를 통해 창업을 시작할 때 업종 및 장소를 제시하고, 시뮬레이션을 통해 창업 준비 요소들을 확인할 수 있도록 지원합니다.</h3>
+            <p>- 상권분석 데이터를 활용하여 모델을 학습시키고 상권 위험도를 분석합니다. </p>
+            <p>- 카카오 맵 API와 연동하여 지도와의 상호작용을 통해 위험도를 제공합니다.</p>
+            <p>- 등기부등본 분석을 통해 위험도 제공하여 부동산 사기를 예방합니다.</p>
+            <p>- 챗봇을 통해 사용자가 서비스를 검색하고 편리하게 웹 페이지에서 제공하는 서비스를 지원받을 수 있습니다.</p>
+            <p>- 시뮬레이션 페이지를 통해 장소, 자금, 대출여부 등을 통해 창업 준비 요소를 확인합니다.</p>
             <p class="read-more">
-                <a href="https://velog.io/@seongho00/series/%EC%B2%AB-%EB%B2%88%EC%A7%B8-%EA%B0%9C%EC%9D%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8">Read More<i class="fa-solid fa-right-to-bracket"></i></a>
+                <a href="https://velog.io/@seongho00/series/%EC%B2%AB-%EB%B2%88%EC%A7%B8-%EA%B0%9C%EC%9D%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8">Read
+                    More<i class="fa-solid fa-right-to-bracket"></i></a>
             </p>
         </div>
 
     </div>
 
-
 </div>
 
+<div class="h-[100px]"></div>
 
-<section id="skills">
+<section id="skills" class="scroll-mt-24">
     <div class="title flex items-center justify-center my-8">
         <div class="flex-1 border-t border-gray-300"></div>
         <h2 class="px-4 text-5xl font-bold text-black">Skills</h2>
@@ -286,7 +319,7 @@
         </card>
     </div>
 </section>
-
+<div class="h-[50px]"></div>
 <!-- ====== 스크립트 (Vue 2 → 컴포넌트) ====== -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.7.16/vue.min.js"></script>
 
