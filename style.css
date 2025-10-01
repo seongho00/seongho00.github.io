@@ -351,7 +351,7 @@ footer {
 /* alt 카드 (오른쪽 사진, 왼쪽 글) */
 .blog-card.alt .description::before {
     left: auto;
-    right: -20px;
+    right: -15px;
     transform: skewX(5deg);
 }
 
