@@ -1,4 +1,4 @@
-/* 기본 스타일 */
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css'); /* 기본 스타일 */
 /* ====== 스타일 (기존 CSS + 카드 효과) ====== */
 :root {
     --hover-easing: cubic-bezier(0.23, 1, 0.32, 1);
@@ -410,4 +410,8 @@ footer {
 
 .body {
     font-family: 'KimJeongcheolMyoungjo300', serif;
+}
+
+.content {
+    font-family: 'NanumSquare', serif;
 }
