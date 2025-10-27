@@ -415,3 +415,48 @@ footer {
 .content {
     font-family: 'NanumSquare', serif;
 }
+
+
+.swiper-button-prev, .swiper-button-next {
+    color: black;
+}
+
+.swiper-pagination-bullet {
+    background: black !important;
+    opacity: 0.7;
+}
+
+.swiper-pagination-bullet-active {
+    background: #f97316 !important; /* 주황 포인트 */
+    opacity: 1;
+}
+
+.swiper {
+    width: auto;             /* 가로 자동 */
+    height: auto;            /* 세로 자동 */
+    max-width: 1200px;         /* 화면보다 너무 커지지 않게 */
+    max-height: 600px;        /* 세로도 제한 */
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.swiper-wrapper {
+    align-items: center;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto !important; /* Swiper 기본값 100% 제거 */
+}
+
+.swiper-slide img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: inherit;
+    display: block;
+}

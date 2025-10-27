@@ -22,6 +22,12 @@
     <!-- jQuery (최신 안정 버전) -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="style.css">
     <script src="javascript.js"></script>
 </head>
@@ -46,6 +52,113 @@
 <!-- 헤더 높이만큼 빈 div (본문이 가려지지 않도록) -->
 <div class="h-32"></div>
 
+
+<!-- 모달 배경 + Swiper -->
+<div id="tripTaleModal"
+     class="fixed inset-0 bg-black/70 hidden justify-center items-center z-50">
+    <div class="relative">
+        <!-- 닫기 버튼 -->
+        <button
+                class="closeModal absolute top-1 right-3 text-black text-3xl font-bold z-50 hover:text-gray-700">
+            &times;
+        </button>
+
+        <!-- Swiper -->
+        <div class="swiper tripTaleImg rounded-xl overflow-hidden">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./assets/tripTaleImg/메인 페이지.png"
+                                               class="w-full h-full object-contain"/></div>
+                <div class="swiper-slide"><img src="./assets/tripTaleImg/로그인 페이지.png"
+                                               class="w-full h-full object-contain"/></div>
+                <div class="swiper-slide"><img src="./assets/tripTaleImg/1-1.  지역 클릭 시.PNG"
+                                               class="w-full h-full object-contain"/></div>
+                <div class="swiper-slide"><img src="./assets/tripTaleImg/2-1. 날짜 클릭 시.png"
+                                               class="w-full h-full object-contain"/></div>
+                <div class="swiper-slide"><img src="./assets/tripTaleImg/3-1. 시간 클릭 시.PNG"
+                                               class="w-full h-full object-contain"/></div>
+                <div class="swiper-slide"><img src="./assets/tripTaleImg/4-1. 장소 추가 시.PNG"
+                                               class="w-full h-full object-contain"/></div>
+                <div class="swiper-slide"><img src="./assets/tripTaleImg/4-4. 사진 클릭 시.PNG"
+                                               class="w-full h-full object-contain"/></div>
+                <div class="swiper-slide"><img src="./assets/tripTaleImg/여행 디테일 화면.png"
+                                               class="w-full h-full object-contain"/></div>
+                <div class="swiper-slide"><img src="./assets/tripTaleImg/8. 게시글 작성 화면.PNG"
+                                               class="w-full h-full object-contain"/></div>
+                <div class="swiper-slide"><img src="./assets/tripTaleImg/8-2. 게시글 수정 페이지.PNG"
+                                               class="w-full h-full object-contain"/></div>
+                <div class="swiper-slide"><img src="./assets/tripTaleImg/9. 일정 확인 페이지.PNG"
+                                               class="w-full h-full object-contain"/></div>
+            </div>
+
+            <!-- 페이징/버튼 -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+</div>
+
+
+<!-- 모달 배경 + Swiper -->
+<div id="TMRTeamProjectModal"
+     class="fixed inset-0 bg-black/70 hidden justify-center items-center z-50">
+    <div class="relative">
+        <!-- 닫기 버튼 -->
+        <button
+                class="closeModal absolute top-1 right-3 text-black text-3xl font-bold z-50 hover:text-gray-700">
+            &times;
+        </button>
+
+        <!-- Swiper -->
+        <div class="swiper tmrImg rounded-xl overflow-hidden">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./assets/TMRTeamProject/메인%20홈페이지.PNG"
+                                               class="w-full h-full object-contain"/></div>
+                <div class="swiper-slide"><img src="./assets/TMRTeamProject/3. 로그인 및 회원가입 페이지.PNG"
+                                               class="w-full h-full object-contain"/></div>
+                <div class="swiper-slide"><img src="./assets/TMRTeamProject/3-5. 로그인 및 회원가입 페이지 (회원가입 유효성 검사).PNG"
+                                               class="w-full h-full object-contain"/></div>
+                <div class="swiper-slide"><img src="./assets/TMRTeamProject/4. 마이페이지.PNG"
+                                               class="w-full h-full object-contain"/></div>
+
+                <div class="swiper-slide"><img src="./assets/TMRTeamProject/2. 등기부등본 분석 페이지.PNG"
+                                               class="w-full h-full object-contain"/></div>
+                <div class="swiper-slide"><img src="./assets/TMRTeamProject/2-3. 등기부등본 분석 페이지(분석하기 버튼 클릭 시).PNG"
+                                               class="w-full h-full object-contain"/></div>
+                <div class="swiper-slide"><img src="./assets/TMRTeamProject/2-5. 등기부등본 분석 페이지(상세보기 버튼 클릭 시).PNG"
+                                               class="w-full h-full object-contain"/></div>
+
+                <div class="swiper-slide"><img src="./assets/TMRTeamProject/6-2. 청약 공고 페이지 (알림 버튼 클릭 시).PNG"
+                                               class="w-full h-full object-contain"/></div>
+
+                <div class="swiper-slide"><img src="./assets/TMRTeamProject/9. 챗봇 팝업 (챗봇버튼 클릭 시).PNG"
+                                               class="tall-img w-full h-full object-contain"/></div>
+                <div class="swiper-slide"><img src="./assets/TMRTeamProject/9-5. 챗봇 팝업 (위험도 분석 검색 결과).PNG"
+                                               class="tall-img w-full h-full object-contain"/></div>
+                <div class="swiper-slide"><img src="./assets/TMRTeamProject/챗봇 팝업 (유동인구 검색 결과).PNG"
+                                               class="tall-img w-full h-full object-contain"/></div>
+
+                <div class="swiper-slide"><img src="./assets/TMRTeamProject/8-2. 유동인구, 매출 페이지 (그래프 보기 버튼 클릭 시).PNG"
+                                               class="w-full h-full object-contain"/></div>
+                <div class="swiper-slide"><img src="./assets/TMRTeamProject/위험도 분석 페이지 (업종 및 지역 선택 후 분석하기 버튼 클릭 시).PNG"
+                                               class="w-full h-full object-contain"/></div>
+
+
+                <div class="swiper-slide"><img src="./assets/TMRTeamProject/10. 시뮬레이션 페이지.PNG"
+                                               class="w-full h-full object-contain"/></div>
+                <div class="swiper-slide"><img src="./assets/TMRTeamProject/10-6. 시뮬레이션 페이지 (비교모드 활성화 후 지역 클릭 시).PNG"
+                                               class="w-full h-full object-contain"/></div>
+                <div class="swiper-slide"><img src="./assets/TMRTeamProject/10-11. 시뮬레이션 페이지 (이벤트 발생 시).PNG"
+                                               class="w-full h-full object-contain"/></div>
+            </div>
+
+            <!-- 페이징/버튼 -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+</div>
 
 <!-- 홈 섹션 -->
 <section id="home" class="scroll-mt-32">
@@ -143,7 +256,7 @@
 
 
 <div class="flex flex-col items-center gap-8 mt-16">
-    <div class="blog-card w-[1000px] h-[300px]">
+    <div class="tripTaleCard blog-card w-[1000px] h-[300px] cursor-pointer">
         <div class="meta">
             <div class="photo absolute inset-0 overflow-hidden">
                 <img src="./assets/tripTaleImg/메인 페이지.png"
@@ -176,7 +289,8 @@
         <div class="description">
             <h1 class="font-bold flex justify-between">TripTale Project
                 <div class="flex gap-2">
-                    <a href="https://velog.io/@seongho00/series/%EC%B2%AB-%EB%B2%88%EC%A7%B8-%EA%B0%9C%EC%9D%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8" target="_blank"
+                    <a href="https://velog.io/@seongho00/series/%EC%B2%AB-%EB%B2%88%EC%A7%B8-%EA%B0%9C%EC%9D%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8"
+                       target="_blank"
                        class="flex items-center gap-1 px-2 py-1 bg-[#20C997] text-white rounded-md shadow hover:bg-[#1cae86] transition text-sm">
                         <i class="fa-solid fa-pen-nib text-base"></i>
                         <span class="font-medium">Velog</span>
@@ -202,7 +316,7 @@
 
     </div>
 
-    <div class="blog-card alt w-[1000px] h-[300px]">
+    <div class="tmrCard blog-card alt w-[1000px] h-[300px] cursor-pointer">
         <div class="meta">
             <div class="photo absolute inset-0 overflow-hidden">
                 <img src="./assets/TMRTeamProject/메인%20홈페이지.PNG"
@@ -238,7 +352,8 @@
         <div class="description">
             <h1 class="font-bold flex justify-between">TMRTeamProject
                 <div class="flex gap-2">
-                    <a href="https://velog.io/@seongho00/series/%ED%8C%80%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8" target="_blank"
+                    <a href="https://velog.io/@seongho00/series/%ED%8C%80%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8"
+                       target="_blank"
                        class="flex items-center gap-1 px-2 py-1 bg-[#20C997] text-white rounded-md shadow hover:bg-[#1cae86] transition text-sm">
                         <i class="fa-solid fa-pen-nib text-base"></i>
                         <span class="font-medium">Velog</span>
@@ -426,5 +541,6 @@
 
     new Vue({el: '#app'});
 </script>
+
 </body>
 </html>
